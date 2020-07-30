@@ -9,7 +9,7 @@ var bodyParser       = require("body-parser"),
 //APP CONFIG
 mongoose.connect("mongodb://localhost:27017/restful_blog_app");
 app.set("view engine", "ejs");
-app.use(express.static("public"));
+//app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended:true}));
 app.use(expressSanitizer())
 app.use(methodOverride("_method"));
